@@ -10,22 +10,26 @@
 <body>
     <div id="container">
         <div id="header">
-            <h1>PERTEMUAN I -- SISTEM PAKAR</h1>
+            <h1>PERTEMUAN I</h1>
         </div>
 
         <div style="display: flex;">
         <div id="sidebar">
             <h3>navigasi</h3>
             <ul id="navmenu">
-                <li><a href="index.php" class="selected">Profile</a></li>
-                <li><a href="konten/galeri.php">Galeri</a></li>
-                <li><a href="konten/jadwal.php">Jadwal Kuliah</a></li>
+                <li><a href="?" class="selected">Profile</a></li>
+                <li><a href="?module=galeri">Galeri</a></li>
+                <li><a href="?module=jadwal">Jadwal Kuliah</a></li>
             </ul>
         </div>
 
         <div id="page">
-            Ini halaman utama
-            <h2>&nbsp</h2>
+            <?php
+            if (isset($_GET['module']))
+                include("konten/$_GET[module].php");
+            else
+                include("home.php");
+            ?>
         </div>
         </div>
 
