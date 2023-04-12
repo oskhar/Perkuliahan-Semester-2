@@ -2,10 +2,10 @@
             <p>Ini Halaman Jadwal xxxxxxxxxxxxxxxxxxxxx</p>
             <table width="377" border="1">
                 <tr>
-                    <td width="22" bgcolor="#3399ff">No</td>
-                    <td width="113" bgcolor="#3399ff">Mata Kuliah</td>
-                    <td width="65" bgcolor="#3399ff">Hari</td>
-                    <td width="76" bgcolor="#3399ff">Waktu</td>
+                    <td width="22" bgcolor="#99ccff">No</td>
+                    <td width="113" bgcolor="#99ccff">Mata Kuliah</td>
+                    <td width="65" bgcolor="#99ccff">Hari</td>
+                    <td width="76" bgcolor="#99ccff">Waktu</td>
                 </tr>
                 <tr>
                     <td>1</td>

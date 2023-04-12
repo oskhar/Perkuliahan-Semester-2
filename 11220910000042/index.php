@@ -8,6 +8,11 @@
     <title>Program awal</title>
 </head>
 <body>
+    <div id="loadingpage" style="height:100%;width:100%;position:fixed;left:0;top:0;background:#0d1116;z-index:10;cursor:wait;">
+        <center>
+            <pre id="loading_el" style="color: white;font-size:0.5em;top: 5em;position:relative;"></pre>
+        </center>
+    </div>
     <div id="container">
         <div id="header">
             <h1>PERTEMUAN I</h1>
@@ -17,9 +22,9 @@
         <div id="sidebar">
             <h3>navigasi</h3>
             <ul id="navmenu">
-                <li><a href="?" class="selected">Profile</a></li>
-                <li><a href="?module=galeri">Galeri</a></li>
-                <li><a href="?module=jadwal">Jadwal Kuliah</a></li>
+                <li><a href="?" <?php if (!isset($_GET['module'])) echo 'class="selected"'; ?>>Profile</a></li>
+                <li><a href="?module=galeri" <?php if (isset($_GET['module'])) if ($_GET['module'] == "galeri") echo 'class="selected"'; ?>>Galeri</a></li>
+                <li><a href="?module=jadwal" <?php if (isset($_GET['module'])) if ($_GET['module'] == "jadwal") echo 'class="selected"'; ?>>Jadwal Kuliah</a></li>
             </ul>
         </div>
 
@@ -40,5 +45,7 @@
         </div>
 
     </div>
+    <div id="character"></div>
+    <script type="module" src="script/app.js"></script>
 </body>
 </html>

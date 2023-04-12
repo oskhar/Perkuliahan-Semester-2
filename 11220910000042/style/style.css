@@ -16,7 +16,7 @@ body {
     padding: 10px;
     height: 75px;
     border: #0000ff dashed 1px;
-    /* background-color: #99ccff; */
+    background-color: #99ccff;
     background-image: url(../images/tes2.gif);
     background-size: 100% auto;
     background-position: 0px -250px;
@@ -28,7 +28,7 @@ body {
     width: 815px;
     height: 110px;
     padding: 10px;
-    color: #0000ff;
+    color: #003366;
     font-family: 'trebuchet ms', Arial, Helvetica, sans-serif;
 }
 
@@ -114,4 +114,15 @@ img {
     margin-top: 10px;
     text-align: center;
     background-color: #99ccff;
+}
+
+/* Animasi */
+#character {
+    position: fixed;
+    left: calc((100vw - 96px) / 2);
+    bottom: 100px;
+    width: 96px;
+    height: 128px;
+    background-image: url(../images/tes4.gif);
+    background-size: cover;
 }
