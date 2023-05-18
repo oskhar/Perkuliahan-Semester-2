@@ -1,7 +1,7 @@
 <form action="register.php" method="post">
     <p>&nbsp;</p>
     <div align="center" class="style1">
-        <h2 style="color:#003366;">REGISTER</h2>
+        <h2 style="color:#003366;">REGISTRASI</h2>
     </div>
     <table width="496" border="0" align="center">
         <tr>

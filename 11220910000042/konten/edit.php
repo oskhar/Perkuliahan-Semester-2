@@ -8,7 +8,7 @@ $data = mysqli_fetch_array($result);
     <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
     <p>&nbsp;</p>
     <div align="center" class="style1">
-        <h2 style="color:#003366;">REGISTER</h2>
+        <h2 style="color:#003366;">UBAH DATA</h2>
     </div>
     <table width="496" border="0" align="center">
         <tr>
