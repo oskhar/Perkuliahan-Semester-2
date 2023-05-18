@@ -1,3 +1,4 @@
+<?php include "konek.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,9 +23,9 @@
         <div id="sidebar">
             <h3>navigasi</h3>
             <ul id="navmenu">
-                <li><a href="?" <?php if (!isset($_GET['module'])) echo 'class="selected"'; ?>>Profile</a></li>
-                <li><a href="?module=galeri" <?php if (isset($_GET['module'])) if ($_GET['module'] == "galeri") echo 'class="selected"'; ?>>Galeri</a></li>
-                <li><a href="?module=jadwal" <?php if (isset($_GET['module'])) if ($_GET['module'] == "jadwal") echo 'class="selected"'; ?>>Jadwal Kuliah</a></li>
+                <li><a href="?" <?php if (!isset($_GET['module'])) echo 'class="selected"'; ?>>Register</a></li>
+                <li><a href="?module=galeri" <?php if (isset($_GET['module'])) if ($_GET['module'] == "galeri") echo 'class="selected"'; ?>>Search Data</a></li>
+                <li><a href="?module=jadwal" <?php if (isset($_GET['module'])) if ($_GET['module'] == "jadwal" || $_GET['module'] == "edit") echo 'class="selected"'; ?>>Pusat Data</a></li>
             </ul>
         </div>
 
@@ -45,7 +46,6 @@
         </div>
 
     </div>
-    <div id="character"></div>
     <script type="module" src="script/app.js"></script>
 </body>
 </html>
