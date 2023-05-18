@@ -27,7 +27,7 @@ try {
     #data_center button {
         width: 80px;
         background: #99ccff;
-        border: 1px solid gray;
+        border: 1px solid lightgray;
         border-radius:3px;
     }
     #data_center a {
@@ -48,6 +48,9 @@ try {
         column-gap: 10px;
         display: grid;
     }
+    sup {
+        color: gray;
+    }
 </style>
 
 Cari member
@@ -64,15 +67,15 @@ Cari member
             <b style="text-align:center;color:#003366;"><?php echo $data['username'] ?></b>
             <div id="data_rincian">
                 <div>
-                    <p> <?php echo $data['namadep'] ?><sup>(namadep)</sup></p>
-                    <p> <?php echo $data['namabel'] ?><sup>(namabel)</sup></p>
-                    <p> <?php echo $data['password'] ?><sup>(password)</sup></p>
-                    <p><?php echo $data['usia'] ?> tahun<sup>(umur)</sup></p>
+                    <p> <?php echo $data['namadep'] ?><sup>[namadep]</sup></p>
+                    <p> <?php echo $data['namabel'] ?><sup>[namabel]</sup></p>
+                    <p> <?php echo $data['password'] ?><sup>[password]</sup></p>
+                    <p><?php echo $data['usia'] ?> tahun<sup>[umur]</sup></p>
                 </div>
                 <div>
-                    <p> <?php echo $data['jk'] ?><sup>(jk)</sup></p>
-                    <p> <?php echo $data['ttl'] ?><sup>(ttl)</sup></p>
-                    <p> <?php echo $data['notel'] ?><sup>(tel)</sup></p>
+                    <p> <?php echo $data['jk'] ?><sup>[jk]</sup></p>
+                    <p> <?php echo $data['ttl'] ?><sup>[ttl]</sup></p>
+                    <p> <?php echo $data['notel'] ?><sup>[tel]</sup></p>
                 </div>
             </div>
             <p><?php echo $data['email'] ?></p>
