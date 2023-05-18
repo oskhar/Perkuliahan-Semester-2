@@ -35,7 +35,7 @@ try {
         color: black;
     }
     #data_user {
-        height: 300px;
+        height: 280px;
         box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
         display: grid;
         grid-template-rows: 2em auto 2em 2em;
@@ -67,7 +67,7 @@ Cari member
                     <p> <?php echo $data['namadep'] ?><sup>(namadep)</sup></p>
                     <p> <?php echo $data['namabel'] ?><sup>(namabel)</sup></p>
                     <p> <?php echo $data['password'] ?><sup>(password)</sup></p>
-                    <p><?php echo $data['usia'] ?> tahun</p>
+                    <p><?php echo $data['usia'] ?> tahun<sup>(umur)</sup></p>
                 </div>
                 <div>
                     <p> <?php echo $data['jk'] ?><sup>(jk)</sup></p>
