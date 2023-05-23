@@ -56,7 +56,7 @@ try {
 Cari member
 <form action="" method="get">
     <input type="hidden" name="module" value="galeri">
-    <input type="text" name="username">
+    <input type="text" name="username" id="username_search" onkeyup="window.location.href='?module=galeri&username=' + this.value;" value="<?php echo $username ?>" style="word-break: break-all;" autofocus="autofocus" >
     <input type="submit" value="cari">
 </form>
 <br>
@@ -87,3 +87,25 @@ Cari member
     <?php endwhile; ?>
 </div>
 <br>
+<script>
+function mulai_search(el) {
+
+    var len = el.value.length;
+
+    if (el.setSelectionRange) {
+
+        el.focus();
+        el.setSelectionRange(len, len);
+
+    } else if (el.createTextRange) {
+
+        var t = el.createTextRange();
+        t.collapse(true);
+        t.moveEnd('character', len);
+        t.moveStart('character', len);
+        t.select();
+
+    }
+}
+mulai_search(document.getElementById("username_search"));
+</script>
