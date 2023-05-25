@@ -24,15 +24,14 @@
                 <div id="sidebar">
                     <h3>navigasi</h3>
                     <ul id="navmenu">
-                        <li><a href="?" <?php if (!isset($_GET['module'])) echo 'class="selected"'; ?>>Register</a></li>
-                        <li><a href="?module=galeri" <?php if (isset($_GET['module'])) if ($_GET['module'] == "galeri") echo 'class="selected"'; ?>>Cari Data</a></li>
-                        <li><a href="?module=jadwal" <?php if (isset($_GET['module'])) if ($_GET['module'] == "jadwal" || $_GET['module'] == "edit") echo 'class="selected"'; ?>>Pusat Data</a></li>
+                        <li><a href="?" <?php if (!isset($_GET['module'])) echo 'class="selected"'; ?>>INSERT</a></li>
+                        <li><a href="?module=jadwal" <?php if (isset($_GET['module'])) if ($_GET['module'] == "jadwal" || $_GET['module'] == "edit") echo 'class="selected"'; ?>>VIEW</a></li>
+                        <li><a href="?module=galeri" <?php if (isset($_GET['module'])) if ($_GET['module'] == "galeri") echo 'class="selected"'; ?>>SEARCH</a></li>
                     </ul>
                 </div>
 
                 <div id="login">
-                    <form action="" action="post">
-                        <input type="hidden" name="module" value="indexproc">
+                    <form action="?module=loginproc" method="post">
                         <label>Username</label>
                         <input type="text" name="user">
                         <label>Password</label>
