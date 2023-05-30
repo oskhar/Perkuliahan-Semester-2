@@ -42,7 +42,7 @@
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td><input type="submit" value="input" style="width: 80px; background: #99ccff; border: 1px solid gray; border-radius:3px;"></td>
+            <td><input type="reset" value="reset" style="width: 80px; background: #99ccff; border: 1px solid gray; border-radius:3px;"><input type="submit" value="input" style="width: 80px; background: #99ccff; border: 1px solid gray; border-radius:3px;"></td>
         </tr>
     </table>
 </form>

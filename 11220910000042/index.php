@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>Program awal</title>
+    <title>PEMROGRAMAN LANJUT</title>
 </head>
 <body>
     <div id="loadingpage" style="height:100%;width:100%;position:fixed;left:0;top:0;background:#0d1116;z-index:10;cursor:wait;">
@@ -16,11 +16,11 @@
     </div>
     <div id="container">
         <div id="header">
-            <h1>PERTEMUAN I</h1>
+            <h1>PERTEMUAN X</h1>
         </div>
 
         <div id="badan">
-            <div>
+            <div style="display:grid;grid-template-rows: auto 200px;">
                 <div id="sidebar">
                     <h3>navigasi</h3>
                     <ul id="navmenu">
@@ -36,7 +36,7 @@
                         <input type="text" name="user">
                         <label>Password</label>
                         <input type="password" name="pass">
-                        <input type="submit" value="sub" style="width: 80px; background: #99ccff; border: 1px solid gray; border-radius:3px;margin-top:10px">
+                        <input type="submit" value="Login" style="width:100%; background: #99ccff; border: 1px solid gray; border-radius:3px;margin-top:10px">
                     </form>
                 </div>
             </div>

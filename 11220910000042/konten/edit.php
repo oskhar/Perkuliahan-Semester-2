@@ -49,7 +49,8 @@ $data = mysqli_fetch_array($result);
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td><input type="submit" value="Tetapkan Perubahan" style="width: 160px; background: #99ccff; border: 1px solid gray; border-radius:3px;"></td>
+            <td><input type="reset" value="Reset" style="width: 100px; background: #99ccff; border: 1px solid gray; border-radius:3px;"><input type="submit" value="Submit" style="width: 100px; background: #99ccff; border: 1px solid gray; border-radius:3px;"></td>
         </tr>
     </table>
 </form>
+<br>
