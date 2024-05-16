@@ -16,12 +16,6 @@ function animasi() {
 
 const run = setInterval(animasi, 150);
 
-// Character move
-// character.style.left = ((innerWidth - 96) / 2) + "px";
-// character.style.top = (innerHeight - 200) + "px";
-
-// const move = setInterval(char_move, 50);
-
 // Delete loading
 window.addEventListener("DOMContentLoaded", function () {
 
